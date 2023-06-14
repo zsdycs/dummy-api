@@ -1,0 +1,11 @@
+{
+  "name": "dummy-api",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "stubby --data route.json --watch --location localhost --stubs 8080"
+  },
+  "private": true,
+  "dependencies": {
+    "stubby": "^4.0.0"
+  }
+}

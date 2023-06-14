@@ -1,0 +1,62 @@
+[
+  {
+    "request": {
+      "url": "/",
+      "method": "GET",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "latency": 200,
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\"><title>dummy-api</title></head><body>:)</body></html>"
+    }
+  },
+  {
+    "request": {
+      "url": "^/apps/v1/example$",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "response": {
+      "status": 200,
+      "latency": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "file": "fixture/1_response.json"
+    }
+  },
+  {
+    "request": {
+      "url": "^/apps/v1/example-file1/a$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "content-Type": "application/force-download"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "fixture/file/a.png"
+    }
+  },
+  {
+    "request": {
+      "url": "^/apps/v1/example-file2/b$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "content-Type": "application/force-download"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "fixture/file/b.txt"
+    }
+  }
+]
